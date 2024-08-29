@@ -12,7 +12,7 @@
 #include "../include/GLFWwindowHelpers.h"
 
 // Callback for window size change (by OS or user resize)
-void framebuffer_size_callback(GLFWwindow* window, const unsigned int width, const unsigned int height)
+void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
     // make sure the viewport matches the new window dimensions; note that width and
     // height will be significantly larger than specified on retina displays.

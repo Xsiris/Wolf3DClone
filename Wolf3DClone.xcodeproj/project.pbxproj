@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE9092A52C8034E900EBEDBA /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE9092A42C8034E900EBEDBA /* Shader.cpp */; };
 		CEF88F342C7EF9C3007DA2B8 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF88F312C7EF7E0007DA2B8 /* glad.c */; };
 		CEF88F372C7F0295007DA2B8 /* GLFWwindowHelpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF88F362C7F0295007DA2B8 /* GLFWwindowHelpers.cpp */; };
 		CEFDE6502C7EE4EC0069F39C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEFDE64F2C7EE4EC0069F39C /* main.cpp */; };
@@ -29,6 +30,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE9092A12C7FC45C00EBEDBA /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		CE9092A32C8034DC00EBEDBA /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		CE9092A42C8034E900EBEDBA /* Shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		CE9092A72C80381D00EBEDBA /* vertexshader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = vertexshader.vs; sourceTree = "<group>"; };
+		CE9092A82C80382B00EBEDBA /* fragmentshader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = fragmentshader.fs; sourceTree = "<group>"; };
 		CEF88F312C7EF7E0007DA2B8 /* glad.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = glad.c; path = "../../../../../../Downloads/glad-2/src/glad.c"; sourceTree = "<group>"; };
 		CEF88F352C7F0244007DA2B8 /* GLFWwindowHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLFWwindowHelpers.h; sourceTree = "<group>"; };
 		CEF88F362C7F0295007DA2B8 /* GLFWwindowHelpers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GLFWwindowHelpers.cpp; sourceTree = "<group>"; };
@@ -55,10 +61,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE9092A62C8037BA00EBEDBA /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				CE9092A72C80381D00EBEDBA /* vertexshader.vs */,
+				CE9092A82C80382B00EBEDBA /* fragmentshader.fs */,
+			);
+			path = shader;
+			sourceTree = "<group>";
+		};
 		CEF88F2C2C7EF784007DA2B8 /* include */ = {
 			isa = PBXGroup;
 			children = (
 				CEF88F352C7F0244007DA2B8 /* GLFWwindowHelpers.h */,
+				CE9092A32C8034DC00EBEDBA /* Shader.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -68,6 +84,7 @@
 			children = (
 				CEF88F312C7EF7E0007DA2B8 /* glad.c */,
 				CEF88F362C7F0295007DA2B8 /* GLFWwindowHelpers.cpp */,
+				CE9092A42C8034E900EBEDBA /* Shader.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -92,6 +109,7 @@
 		CEFDE64E2C7EE4EC0069F39C /* Wolf3DClone */ = {
 			isa = PBXGroup;
 			children = (
+				CE9092A62C8037BA00EBEDBA /* shader */,
 				CEF88F2D2C7EF7A5007DA2B8 /* src */,
 				CEF88F2C2C7EF784007DA2B8 /* include */,
 				CEFDE64F2C7EE4EC0069F39C /* main.cpp */,
@@ -102,6 +120,7 @@
 		CEFDE6562C7EEE210069F39C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE9092A12C7FC45C00EBEDBA /* GLUT.framework */,
 				CEFDE65D2C7EEE730069F39C /* libglfw3.a */,
 				CEFDE65B2C7EEE360069F39C /* Cocoa.framework */,
 				CEFDE6592C7EEE300069F39C /* IOKit.framework */,
@@ -169,6 +188,7 @@
 			files = (
 				CEF88F342C7EF9C3007DA2B8 /* glad.c in Sources */,
 				CEFDE6502C7EE4EC0069F39C /* main.cpp in Sources */,
+				CE9092A52C8034E900EBEDBA /* Shader.cpp in Sources */,
 				CEF88F372C7F0295007DA2B8 /* GLFWwindowHelpers.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

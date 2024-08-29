@@ -9,6 +9,6 @@
 #define GLFWwindowHelpers_h
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
-GLFWwindow* initWindow(const char* windowName, const unsigned int window_width, const unsigned int window_height);
+GLFWwindow* initWindow(const char* windowName, int window_width, int window_height);
 
 #endif /* GLFWwindowHelpers_h */
